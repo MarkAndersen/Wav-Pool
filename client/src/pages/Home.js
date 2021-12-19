@@ -1,31 +1,36 @@
 import React from "react";
+import { Box, Button, ButtonGroup, Paper,Container } from "@mui/material";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import { Button, ButtonGroup } from "@mui/material";
 import useSound from "use-sound";
-import brrtt from '../sounds/brrtt.wav';
+import picture from "../assets/wav-pool-sm.jpg";
+import brrtt from "../assets/brrtt.wav";
+import train from "../assets/train.wav";
 
+const styles = {
+  image: {
+    Height: "100vh",
+    width: "100vw"
+  }
+}
 
 export default function Home() {
-const [toot] = useSound(brrtt);
-  
-  
+    const [toot] = useSound(brrtt);
+    const [whistle] = useSound(train);
+
   return (
-    <div>
-      {/* header has title, log in feature to follow */}
+    <React.Fragment>
       <Navbar />
-      <div>
-        {/* background image */}
-        {/* button group, imported component or hardcoded? May have use for multiple layouts utilizing this layout*/}
-        <img alt="placeholder" src="https://via.placeholder.com/500"></img>
+          <img alt="hot tub" src={picture} style={styles.image}></img>
+          <br></br>
         <ButtonGroup variant="text" aria-label="text button group">
           <Button onClick={toot}>One</Button>
-          <Button>Two</Button>
+          <Button onClick={whistle}>Two</Button>
           <Button>Three</Button>
-        </ButtonGroup>
-      </div>
+        </ButtonGroup> 
       <Footer />
-    </div>
+      
+    </React.Fragment>
   );
 }
 // Light/Dark Mode?? Custom Palettes?
