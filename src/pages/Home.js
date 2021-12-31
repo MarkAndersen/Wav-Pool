@@ -1,38 +1,27 @@
 import React from "react";
-import { Box, Button, ButtonGroup, Grid, Container } from "@mui/material";
+import { Box, Button, ButtonGroup, Grid, Container, Typography, Paper } from "@mui/material";
 import { spacing } from "@mui/system";
-import { createTheme } from '@mui/material/styles';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import useSound from "use-sound";
 import picture from "../assets/wav-pool-sm.jpg";
 import brrtt from "../assets/brrtt.wav";
 import train from "../assets/train.wav";
-// import { height } from "@mui/system";
-
-// const styles = {
-//   image: {
-//     // Height: "99vh",
-//     Width: "100%"
-//   },
-
-//   pictureBox: {
-//     backgroundImage: `url(${picture})`,
-//     height: 500,
-//     width: "100%"
-
-//   }
-// }
+import bjird from "../assets/bjird.wav";
+import bobbo from "../assets/bobbo1.wav";
+import bobbo2 from "../assets/bobbo2.wav";
+import bobbo3 from "../assets/bobbo3.wav";
 
 
 export default function Home() {
   const theme = createTheme({
     palette: {
       primary: {
-        light: "#484848",
-        main: "#212121",
-        dark: "#000000",
-        contrastText: "#ffffff",
+        light: "#ffffff",
+        main: "#f5f5f5",
+        dark: "#c2c2c2",
+        contrastText: "#000000",
   
       }, 
     },
@@ -40,12 +29,17 @@ export default function Home() {
 
   const [toot] = useSound(brrtt);
   const [whistle] = useSound(train);
+  const [bird] = useSound(bjird);
+  const [bob1] = useSound(bobbo);
+  const [bob2] = useSound(bobbo2);
+  const [bob3] = useSound(bobbo3);
 
   return (
     <React.Fragment>
+    <Container maxWidth="false" disableGutters>
       <Navbar />
       <Box
-        sx={{ width: "100%", height: 1500, backgroundImage: `url(${picture})` }}
+        sx={{ width: "100vw", height: "100vh", backgroundImage: `url(${picture})`, backgroundSize: "contain" }}
       >
         {/* <img alt="hot tub" src={picture} style={styles.image}></img>
           <br></br> */}
@@ -57,6 +51,7 @@ export default function Home() {
         <br></br>
         <Grid container spacing={1}>
           <Grid item xs={12}>
+          <ThemeProvider theme={theme}>
             <ButtonGroup
               size="large"
               fullWidth="true"
@@ -64,35 +59,44 @@ export default function Home() {
               aria-label="text button group"
 
             >
-              <Button sx={{ p: 2, m: 2 }} color={theme.pallette} onClick={toot}>
-                One
+              <Button sx={{ m: 5}} onClick={toot}>
+                <Typography variant="h1">&#128169;</Typography>
               </Button>
-              <Button sx={{ p: 2, m: 2 }} onClick={whistle}>
-                Two
+              <Button sx={{ m: 5}} onClick={whistle}>
+                  <Typography variant="h1">&#128646;</Typography>
               </Button>
-              <Button sx={{ p: 2, m: 2 }}>Three</Button>
+              <Button sx={{ m: 5}} onClick={bird}>
+                  <Typography variant="h1">&#x1F426;</Typography>
+              </Button>
             </ButtonGroup>
+            </ThemeProvider>
           </Grid>
           <Grid item xs={12}>
+          <ThemeProvider theme={theme}>
             <ButtonGroup
               size="large"
               fullWidth="true"
               variant="outlined"
               aria-label="text button group"
-              color={theme.primary}
+
             >
-              <Button sx={{ p: 2, m: 2 }} onClick={toot}>
-                One
+              <Button sx={{ m: 5}} onClick={bob1}>
+                <Typography variant="h1">&#128054;</Typography>
               </Button>
-              <Button sx={{ p: 2, m: 2 }} onClick={whistle}>
-                Two
+              <Button sx={{ m: 5}} onClick={bob2}>
+                  <Typography variant="h1">&#128021;</Typography>
               </Button>
-              <Button sx={{ p: 2, m: 2 }}>Three</Button>
+              <Button sx={{ m: 5}} onClick={bob3}>
+                  <Typography variant="h1">&#128054;</Typography>
+              </Button>
             </ButtonGroup>
+            </ThemeProvider>
           </Grid>
         </Grid>
       </Box>
+      
       <Footer />
+      </Container>
     </React.Fragment>
   );
 }

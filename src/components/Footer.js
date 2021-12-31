@@ -1,8 +1,20 @@
 import React from "react";
-
+import { AppBar, Box, Container, Toolbar, Typography } from "@mui/material";
 export default function Footer() {
     return (
-        // Copyrights, silly fonts, no contact me.
-        <h1>Adios Mundo</h1>
+        <AppBar position="static">
+          <Toolbar disableGutters>
+            <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'flex' }, justifyContent: 'center' }}>
+              <Typography
+                variant="h6"
+                noWrap
+                component="div"
+                sx={{ mr: 2, display: { xs: "flex", md: "flex" } }}
+              >
+                &#169; Mark Andersen 2021
+              </Typography>
+            </Box>
+          </Toolbar>
+      </AppBar>
     )
 };
