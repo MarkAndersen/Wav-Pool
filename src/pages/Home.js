@@ -66,182 +66,173 @@ export default function Home() {
             backgroundImage: `url(${picture})`,
           }}
         >
-          <Grid>
-            <ThemeProvider theme={theme}>
-              <Grid item>
-                <ButtonGroup
-                  size="large"
-                  fullWidth="true"
-                  variant="outlined"
-                  aria-label="text button group"
-                >
-                  <Button
-                  
-                    sx={{
-                      m: 2,
-                      backgroundImage: `url(${btnPicture5})`,
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                      opacity: "60%",
-                      minHeight: "20vh",
-                    }}
-                    onClick={toot}
-                  ></Button>
-                  <Button
-                  
-                    sx={{
-                      m: 2,
-                      backgroundImage: `url(${btnPicture4})`,
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                      opacity: "60%",
-                      minHeight: "20vh",
-                    }}
-                    onClick={whistle}
-                  ></Button>
-                  <Button
-                  
-                    sx={{
-                      m: 2,
-                      backgroundImage: `url(${btnPicture3})`,
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                      opacity: "60%",
-                      minHeight: "20vh",
-                    }}
-                    onClick={bird}
-                  ></Button>
-                </ButtonGroup>
-              </Grid>
-              <Grid item>
-                <ButtonGroup
-                  size="large"
-                  fullWidth="true"
-                  variant="outlined"
-                  aria-label="text button group"
-                >
-                  <Button
-                    sx={{
-                      m: 2,
-                      backgroundImage: `url(${btnPicture3})`,
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                      opacity: "60%",
-                      minHeight: "20vh",
-                    }}
-                    onClick={bob1}
-                  ></Button>
-                  <Button
-                    sx={{
-                      m: 2,
-                      backgroundImage: `url(${btnPicture3})`,
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                      opacity: "60%",
-                      minHeight: "20vh",
-                    }}
-                    onClick={bob2}
-                  ></Button>
-                  <Button
-                    sx={{
-                      m: 2,
-                      backgroundImage: `url(${btnPicture3})`,
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                      opacity: "60%",
-                      minHeight: "20vh",
-                    }}
-                    onClick={bob3}
-                  ></Button>
-                </ButtonGroup>
-              </Grid>
-              <Grid item>
-                <ButtonGroup
-                  size="large"
-                  fullWidth="true"
-                  variant="outlined"
-                  aria-label="text button group"
-                >
-                  <Button
-                    sx={{
-                      m: 2,
-                      backgroundImage: `url(${btnPicture2})`,
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                      opacity: "60%",
-                    }}
-                    onClick={looney}
-                  ></Button>
-                  <Button
-                    sx={{
-                      m: 2,
-                      backgroundImage: `url(${btnPicture})`,
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                      opacity: "60%",
-                    }}
-                    onClick={seal}
-                  ></Button>
-                  <Button
-                    sx={{
-                      m: 2,
-                      backgroundImage: `url(${btnPicture3})`,
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                      opacity: "60%",
-                      minHeight: "20vh",
-                    }}
-                    onClick={bob3}
-                  >
-                  </Button>
-                </ButtonGroup>
-              </Grid>
-              <Grid item xs={12}>
-                <ButtonGroup
-                  size="large"
-                  fullWidth="true"
-                  variant="outlined"
-                  aria-label="text button group"
-                >
-                  <Button
-                    sx={{
-                      m: 2,
-                      backgroundImage: `url(${btnPicture3})`,
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                      opacity: "60%",
-                      minHeight: "20vh",
-                    }}
-                    onClick={bob1}
-                  >
-                  </Button>
-                  <Button
-                    sx={{
-                      m: 2,
-                      backgroundImage: `url(${btnPicture3})`,
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                      opacity: "60%",
-                      minHeight: "20vh",
-                    }}
-                    onClick={bob2}
-                  >
-                  </Button>
-                  <Button
-                    sx={{
-                      m: 2,
-                      backgroundImage: `url(${btnPicture3})`,
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                      opacity: "60%",
-                      minHeight: "20vh",
-                    }}
-                    onClick={bob3}
-                  >
-                  </Button>
-                </ButtonGroup>
-              </Grid>
-            </ThemeProvider>
+          <Grid container>
+            <Grid item xs={12} md={6}>
+              <ButtonGroup
+                size="large"
+                fullWidth="true"
+                variant="outlined"
+                aria-label="text button group"
+              >
+                <Button
+                  sx={{
+                    m: 2,
+                    backgroundImage: `url(${btnPicture5})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    opacity: "60%",
+                    minHeight: "20vh",
+                  }}
+                  onClick={toot}
+                ></Button>
+                <Button
+                  sx={{
+                    m: 2,
+                    backgroundImage: `url(${btnPicture4})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    opacity: "60%",
+                    minHeight: "20vh",
+                  }}
+                  onClick={whistle}
+                ></Button>
+                <Button
+                  sx={{
+                    m: 2,
+                    backgroundImage: `url(${btnPicture3})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    opacity: "60%",
+                    minHeight: "20vh",
+                  }}
+                  onClick={bird}
+                ></Button>
+              </ButtonGroup>
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <ButtonGroup
+                size="large"
+                fullWidth="true"
+                variant="outlined"
+                aria-label="text button group"
+              >
+                <Button
+                  sx={{
+                    m: 2,
+                    backgroundImage: `url(${btnPicture3})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    opacity: "60%",
+                    minHeight: "20vh",
+                  }}
+                  onClick={bob1}
+                ></Button>
+                <Button
+                  sx={{
+                    m: 2,
+                    backgroundImage: `url(${btnPicture3})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    opacity: "60%",
+                    minHeight: "20vh",
+                  }}
+                  onClick={bob2}
+                ></Button>
+                <Button
+                  sx={{
+                    m: 2,
+                    backgroundImage: `url(${btnPicture3})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    opacity: "60%",
+                    minHeight: "20vh",
+                  }}
+                  onClick={bob3}
+                ></Button>
+              </ButtonGroup>
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <ButtonGroup
+                size="large"
+                fullWidth="true"
+                variant="outlined"
+                aria-label="text button group"
+              >
+                <Button
+                  sx={{
+                    m: 2,
+                    backgroundImage: `url(${btnPicture2})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    opacity: "60%",
+                  }}
+                  onClick={looney}
+                ></Button>
+                <Button
+                  sx={{
+                    m: 2,
+                    backgroundImage: `url(${btnPicture})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    opacity: "60%",
+                  }}
+                  onClick={seal}
+                ></Button>
+                <Button
+                  sx={{
+                    m: 2,
+                    backgroundImage: `url(${btnPicture3})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    opacity: "60%",
+                    minHeight: "20vh",
+                  }}
+                  onClick={bob3}
+                ></Button>
+              </ButtonGroup>
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <ButtonGroup
+                size="large"
+                fullWidth="true"
+                variant="outlined"
+                aria-label="text button group"
+              >
+                <Button
+                  sx={{
+                    m: 2,
+                    backgroundImage: `url(${btnPicture3})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    opacity: "60%",
+                    minHeight: "20vh",
+                  }}
+                  onClick={bob1}
+                ></Button>
+                <Button
+                  sx={{
+                    m: 2,
+                    backgroundImage: `url(${btnPicture3})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    opacity: "60%",
+                    minHeight: "20vh",
+                  }}
+                  onClick={bob2}
+                ></Button>
+                <Button
+                  sx={{
+                    m: 2,
+                    backgroundImage: `url(${btnPicture3})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    opacity: "60%",
+                    minHeight: "20vh",
+                  }}
+                  onClick={bob3}
+                ></Button>
+              </ButtonGroup>
+            </Grid>
           </Grid>
         </Box>
         <Footer />
