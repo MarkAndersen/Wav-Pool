@@ -27,6 +27,7 @@ import bobbo2 from "../assets/bobbo2.wav";
 import bobbo3 from "../assets/bobbo3.wav";
 import tunes from "../assets/loontunes.wav";
 import kiss from "../assets/seal.wav";
+// import frog from "../assets/ribbit.wav"
 
 export default function Home() {
   const theme = createTheme({
@@ -48,6 +49,7 @@ export default function Home() {
   const [bob3] = useSound(bobbo3);
   const [looney] = useSound(tunes);
   const [seal] = useSound(kiss);
+  // const [forg] = useSound(frog);
 
   return (
     <React.Fragment>
@@ -67,7 +69,7 @@ export default function Home() {
           }}
         >
           <Grid container>
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12}>
               <ButtonGroup
                 size="large"
                 fullWidth="true"
@@ -76,40 +78,55 @@ export default function Home() {
               >
                 <Button
                   sx={{
-                    m: 2,
+                    mt: 1,
+                    mx: "auto",
                     backgroundImage: `url(${btnPicture5})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     opacity: "60%",
-                    minHeight: "20vh",
+                    minHeight: {
+                      xs:"15vh",
+                      md: "27vh",
+                      lg: "32vh",
+                    }
                   }}
                   onClick={toot}
                 ></Button>
                 <Button
                   sx={{
-                    m: 2,
+                    mt: 1,
+                    mx: "auto",
                     backgroundImage: `url(${btnPicture4})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     opacity: "60%",
-                    minHeight: "20vh",
+                    minHeight: {
+                      xs:"15vh",
+                      md: "27vh",
+                      lg: "32vh",
+                    }
                   }}
                   onClick={whistle}
                 ></Button>
                 <Button
                   sx={{
-                    m: 2,
+                    mt: 1,
+                    mx: "auto",
                     backgroundImage: `url(${btnPicture3})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     opacity: "60%",
-                    minHeight: "20vh",
+                    minHeight: {
+                      xs:"15vh",
+                      md: "27vh",
+                      lg: "32vh",
+                    }
                   }}
                   onClick={bird}
                 ></Button>
               </ButtonGroup>
             </Grid>
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12}>
               <ButtonGroup
                 size="large"
                 fullWidth="true"
@@ -118,40 +135,55 @@ export default function Home() {
               >
                 <Button
                   sx={{
-                    m: 2,
+                    mt: 1,
+                    mx: "auto",
                     backgroundImage: `url(${btnPicture3})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     opacity: "60%",
-                    minHeight: "20vh",
+                    minHeight: {
+                      xs:"15vh",
+                      md: "27vh",
+                      lg: "32vh",
+                    }
                   }}
                   onClick={bob1}
                 ></Button>
                 <Button
                   sx={{
-                    m: 2,
+                    mt: 1,
+                    mx: "auto",
                     backgroundImage: `url(${btnPicture3})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     opacity: "60%",
-                    minHeight: "20vh",
+                    minHeight: {
+                      xs:"15vh",
+                      md: "27vh",
+                      lg: "32vh",
+                    }
                   }}
                   onClick={bob2}
                 ></Button>
                 <Button
                   sx={{
-                    m: 2,
+                    mt: 1,
+                    mx: "auto",
                     backgroundImage: `url(${btnPicture3})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     opacity: "60%",
-                    minHeight: "20vh",
+                    minHeight: {
+                      xs:"15vh",
+                      md: "27vh",
+                      lg: "32vh",
+                    }
                   }}
                   onClick={bob3}
                 ></Button>
               </ButtonGroup>
             </Grid>
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12}>
               <ButtonGroup
                 size="large"
                 fullWidth="true"
@@ -160,7 +192,8 @@ export default function Home() {
               >
                 <Button
                   sx={{
-                    m: 2,
+                    mt: 1,
+                    mx: "auto",
                     backgroundImage: `url(${btnPicture2})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
@@ -170,7 +203,8 @@ export default function Home() {
                 ></Button>
                 <Button
                   sx={{
-                    m: 2,
+                    mt: 1,
+                    mx: "auto",
                     backgroundImage: `url(${btnPicture})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
@@ -180,18 +214,23 @@ export default function Home() {
                 ></Button>
                 <Button
                   sx={{
-                    m: 2,
+                    mt: 1,
+                    mx: "auto",
                     backgroundImage: `url(${btnPicture3})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     opacity: "60%",
-                    minHeight: "20vh",
+                    minHeight: {
+                      xs:"15vh",
+                      md: "27vh",
+                      lg: "32vh",
+                    }
                   }}
                   onClick={bob3}
                 ></Button>
               </ButtonGroup>
             </Grid>
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12}>
               <ButtonGroup
                 size="large"
                 fullWidth="true"
@@ -200,34 +239,49 @@ export default function Home() {
               >
                 <Button
                   sx={{
-                    m: 2,
+                    mt: 1,
+                    mx: "auto",
                     backgroundImage: `url(${btnPicture3})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     opacity: "60%",
-                    minHeight: "20vh",
+                    minHeight: {
+                      xs:"15vh",
+                      md: "27vh",
+                      lg: "32vh",
+                    }
                   }}
                   onClick={bob1}
                 ></Button>
                 <Button
                   sx={{
-                    m: 2,
+                    mt: 1,
+                    mx: "auto",
                     backgroundImage: `url(${btnPicture3})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     opacity: "60%",
-                    minHeight: "20vh",
+                    minHeight: {
+                      xs:"15vh",
+                      md: "27vh",
+                      lg: "32vh",
+                    }
                   }}
                   onClick={bob2}
                 ></Button>
                 <Button
                   sx={{
-                    m: 2,
+                    mt: 1,
+                    mx: "auto",
                     backgroundImage: `url(${btnPicture3})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     opacity: "60%",
-                    minHeight: "20vh",
+                    minHeight: {
+                      xs:"15vh",
+                      md: "27vh",
+                      lg: "32vh",
+                    }
                   }}
                   onClick={bob3}
                 ></Button>
