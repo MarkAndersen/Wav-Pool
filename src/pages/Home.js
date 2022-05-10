@@ -14,11 +14,17 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import useSound from "use-sound";
 import picture from "../assets/wav-pool-sm.jpg";
-import btnPicture from "../assets/seal-seal.jpg";
+import btnPicture from "../assets/seal.jpg";
 import btnPicture2 from "../assets/looney.gif";
 import btnPicture3 from "../assets/bird.jpg";
 import btnPicture4 from "../assets/train.jpg";
 import btnPicture5 from "../assets/toot.jpg";
+import btnPicture6 from "../assets/bullfrog.jpg";
+import btnPicture7 from "../assets/bob1.jpg";
+import btnPicture8 from "../assets/bob2.jpg";
+import btnPicture9 from "../assets/bob3.jpg";
+import btnPicture10 from "../assets/horse1.jpg";
+import btnPicture11 from "../assets/2horses.jpg";
 import brrtt from "../assets/brrtt.wav";
 import train from "../assets/train.wav";
 import bjird from "../assets/bjird.wav";
@@ -27,7 +33,10 @@ import bobbo2 from "../assets/bobbo2.wav";
 import bobbo3 from "../assets/bobbo3.wav";
 import tunes from "../assets/loontunes.wav";
 import kiss from "../assets/seal.wav";
-// import frog from "../assets/ribbit.wav"
+import frog from "../assets/ribbit.wav"
+import neigh from "../assets/neigh.wav"
+import clops from "../assets/clop.wav"
+
 
 export default function Home() {
   const theme = createTheme({
@@ -49,7 +58,9 @@ export default function Home() {
   const [bob3] = useSound(bobbo3);
   const [looney] = useSound(tunes);
   const [seal] = useSound(kiss);
-  // const [forg] = useSound(frog);
+  const [forg] = useSound(frog);
+  const [horse] = useSound(neigh);
+  const [horses] = useSound(clops);
 
   return (
     <React.Fragment>
@@ -83,9 +94,9 @@ export default function Home() {
                     backgroundImage: `url(${btnPicture5})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
-                    opacity: "60%",
+                    opacity: "70%",
                     minHeight: {
-                      xs:"15vh",
+                      xs: "15vh",
                       md: "27vh",
                       lg: "32vh",
                     }
@@ -99,9 +110,9 @@ export default function Home() {
                     backgroundImage: `url(${btnPicture4})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
-                    opacity: "60%",
+                    opacity: "70%",
                     minHeight: {
-                      xs:"15vh",
+                      xs: "15vh",
                       md: "27vh",
                       lg: "32vh",
                     }
@@ -115,9 +126,9 @@ export default function Home() {
                     backgroundImage: `url(${btnPicture3})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
-                    opacity: "60%",
+                    opacity: "70%",
                     minHeight: {
-                      xs:"15vh",
+                      xs: "15vh",
                       md: "27vh",
                       lg: "32vh",
                     }
@@ -137,12 +148,12 @@ export default function Home() {
                   sx={{
                     mt: 1,
                     mx: "auto",
-                    backgroundImage: `url(${btnPicture3})`,
+                    backgroundImage: `url(${btnPicture7})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
-                    opacity: "60%",
+                    opacity: "70%",
                     minHeight: {
-                      xs:"15vh",
+                      xs: "15vh",
                       md: "27vh",
                       lg: "32vh",
                     }
@@ -153,12 +164,12 @@ export default function Home() {
                   sx={{
                     mt: 1,
                     mx: "auto",
-                    backgroundImage: `url(${btnPicture3})`,
+                    backgroundImage: `url(${btnPicture8})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
-                    opacity: "60%",
+                    opacity: "70%",
                     minHeight: {
-                      xs:"15vh",
+                      xs: "15vh",
                       md: "27vh",
                       lg: "32vh",
                     }
@@ -169,12 +180,12 @@ export default function Home() {
                   sx={{
                     mt: 1,
                     mx: "auto",
-                    backgroundImage: `url(${btnPicture3})`,
+                    backgroundImage: `url(${btnPicture9})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
-                    opacity: "60%",
+                    opacity: "70%",
                     minHeight: {
-                      xs:"15vh",
+                      xs: "15vh",
                       md: "27vh",
                       lg: "32vh",
                     }
@@ -197,7 +208,7 @@ export default function Home() {
                     backgroundImage: `url(${btnPicture2})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
-                    opacity: "60%",
+                    opacity: "70%",
                   }}
                   onClick={looney}
                 ></Button>
@@ -208,7 +219,7 @@ export default function Home() {
                     backgroundImage: `url(${btnPicture})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
-                    opacity: "60%",
+                    opacity: "70%",
                   }}
                   onClick={seal}
                 ></Button>
@@ -219,9 +230,9 @@ export default function Home() {
                     backgroundImage: `url(${btnPicture3})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
-                    opacity: "60%",
+                    opacity: "70%",
                     minHeight: {
-                      xs:"15vh",
+                      xs: "15vh",
                       md: "27vh",
                       lg: "32vh",
                     }
@@ -241,17 +252,33 @@ export default function Home() {
                   sx={{
                     mt: 1,
                     mx: "auto",
-                    backgroundImage: `url(${btnPicture3})`,
+                    backgroundImage: `url(${btnPicture10})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
-                    opacity: "60%",
+                    opacity: "70%",
                     minHeight: {
-                      xs:"15vh",
+                      xs: "15vh",
                       md: "27vh",
                       lg: "32vh",
                     }
                   }}
-                  onClick={bob1}
+                  onClick={horse}
+                ></Button>
+                <Button
+                  sx={{
+                    mt: 1,
+                    mx: "auto",
+                    backgroundImage: `url(${btnPicture11})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    opacity: "70%",
+                    minHeight: {
+                      xs: "15vh",
+                      md: "27vh",
+                      lg: "32vh",
+                    }
+                  }}
+                  onClick={horses}
                 ></Button>
                 <Button
                   sx={{
@@ -260,9 +287,50 @@ export default function Home() {
                     backgroundImage: `url(${btnPicture3})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
-                    opacity: "60%",
+                    opacity: "70%",
                     minHeight: {
-                      xs:"15vh",
+                      xs: "15vh",
+                      md: "27vh",
+                      lg: "32vh",
+                    }
+                  }}
+                  onClick={bob3}
+                ></Button>
+              </ButtonGroup>
+            </Grid>
+            <Grid item xs={12}>
+              <ButtonGroup
+                size="large"
+                fullWidth="true"
+                variant="outlined"
+                aria-label="text button group"
+              >
+                <Button
+                  sx={{
+                    mt: 1,
+                    mx: "auto",
+                    backgroundImage: `url(${btnPicture6})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    opacity: "70%",
+                    minHeight: {
+                      xs: "15vh",
+                      md: "27vh",
+                      lg: "32vh",
+                    }
+                  }}
+                  onClick={forg}
+                ></Button>
+                <Button
+                  sx={{
+                    mt: 1,
+                    mx: "auto",
+                    backgroundImage: `url(${btnPicture3})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    opacity: "70%",
+                    minHeight: {
+                      xs: "15vh",
                       md: "27vh",
                       lg: "32vh",
                     }
@@ -276,9 +344,9 @@ export default function Home() {
                     backgroundImage: `url(${btnPicture3})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
-                    opacity: "60%",
+                    opacity: "70%",
                     minHeight: {
-                      xs:"15vh",
+                      xs: "15vh",
                       md: "27vh",
                       lg: "32vh",
                     }
@@ -294,4 +362,8 @@ export default function Home() {
     </React.Fragment>
   );
 }
-// Light/Dark Mode?? Custom Palettes?
+
+// 2+ more sounds, new pictures
+// change fonts
+// change background pictures
+
