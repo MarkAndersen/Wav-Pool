@@ -13,32 +13,31 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import useSound from "use-sound";
-import picture from "../assets/wav-pool-sm.jpg";
-import btnPicture from "../assets/seal.jpg";
-import btnPicture2 from "../assets/looney.gif";
-import btnPicture3 from "../assets/bird.jpg";
-import btnPicture4 from "../assets/train.jpg";
-import btnPicture5 from "../assets/toot.jpg";
-import btnPicture6 from "../assets/bullfrog.jpg";
-import btnPicture7 from "../assets/bob1.jpg";
-import btnPicture8 from "../assets/bob2.jpg";
-import btnPicture9 from "../assets/bob3.jpg";
-import btnPicture10 from "../assets/horse1.jpg";
-import btnPicture11 from "../assets/2horses.jpg";
-import btnPicture12 from "../assets/burrp.png"
-import brrtt from "../assets/brrtt.wav";
-import train from "../assets/train.wav";
-import bjird from "../assets/bjird.wav";
-import bobbo from "../assets/bobbo1.wav";
-import bobbo2 from "../assets/bobbo2.wav";
-import bobbo3 from "../assets/bobbo3.wav";
-import tunes from "../assets/loontunes.wav";
-import kiss from "../assets/seal.wav";
-import frog from "../assets/ribbit.wav"
-import neigh from "../assets/neigh.wav"
-import clops from "../assets/clop.wav"
-import leBurp from "../assets/burp.wav"
-
+import picture from "../assets/images/wav-pool-sm.jpg";
+import btnPicture from "../assets/images/seal.jpg";
+import btnPicture2 from "../assets/images/looney.gif";
+import btnPicture3 from "../assets/images/bird.jpg";
+import btnPicture4 from "../assets/images/train.jpg";
+import btnPicture5 from "../assets/images/toot.jpg";
+import btnPicture6 from "../assets/images/bullfrog.jpg";
+import btnPicture7 from "../assets/images/bob1.jpg";
+import btnPicture8 from "../assets/images/bob2.jpg";
+import btnPicture9 from "../assets/images/bob3.jpg";
+import btnPicture10 from "../assets/images/horse1.jpg";
+import btnPicture11 from "../assets/images/2horses.jpg";
+import btnPicture12 from "../assets/images/burrp.png";
+import brrtt from "../assets/sounds/brrtt.wav";
+import train from "../assets/sounds/train.wav";
+import bjird from "../assets/sounds/bjird.wav";
+import bobbo from "../assets/sounds/bobbo1.wav";
+import bobbo2 from "../assets/sounds/bobbo2.wav";
+import bobbo3 from "../assets/sounds/bobbo3.wav";
+import tunes from "../assets/sounds/loontunes.wav";
+import kiss from "../assets/sounds/seal.wav";
+import frog from "../assets/sounds/ribbit.wav";
+import neigh from "../assets/sounds/neigh.wav";
+import clops from "../assets/sounds/clop.wav";
+import leBurp from "../assets/sounds/burp.wav";
 
 export default function Home() {
   const theme = createTheme({
@@ -101,8 +100,8 @@ export default function Home() {
                     minHeight: {
                       xs: "18vh",
                       md: "27vh",
-                      lg: "40vh"
-                    }
+                      lg: "40vh",
+                    },
                   }}
                   onClick={toot}
                 ></Button>
@@ -117,8 +116,8 @@ export default function Home() {
                     minHeight: {
                       xs: "18vh",
                       md: "27vh",
-                      lg: "40vh"
-                    }
+                      lg: "40vh",
+                    },
                   }}
                   onClick={whistle}
                 ></Button>
@@ -133,8 +132,8 @@ export default function Home() {
                     minHeight: {
                       xs: "18vh",
                       md: "27vh",
-                      lg: "40vh"
-                    }
+                      lg: "40vh",
+                    },
                   }}
                   onClick={bird}
                 ></Button>
@@ -158,8 +157,8 @@ export default function Home() {
                     minHeight: {
                       xs: "18vh",
                       md: "27vh",
-                      lg: "40vh"
-                    }
+                      lg: "40vh",
+                    },
                   }}
                   onClick={bob1}
                 ></Button>
@@ -174,8 +173,8 @@ export default function Home() {
                     minHeight: {
                       xs: "18vh",
                       md: "27vh",
-                      lg: "40vh"
-                    }
+                      lg: "40vh",
+                    },
                   }}
                   onClick={bob2}
                 ></Button>
@@ -190,8 +189,8 @@ export default function Home() {
                     minHeight: {
                       xs: "18vh",
                       md: "27vh",
-                      lg: "40vh"
-                    }
+                      lg: "40vh",
+                    },
                   }}
                   onClick={bob3}
                 ></Button>
@@ -237,8 +236,8 @@ export default function Home() {
                     minHeight: {
                       xs: "18vh",
                       md: "27vh",
-                      lg: "40vh"
-                    }
+                      lg: "40vh",
+                    },
                   }}
                   onClick={burps}
                 ></Button>
@@ -262,8 +261,8 @@ export default function Home() {
                     minHeight: {
                       xs: "18vh",
                       md: "27vh",
-                      lg: "40vh"
-                    }
+                      lg: "40vh",
+                    },
                   }}
                   onClick={horse}
                 ></Button>
@@ -278,8 +277,8 @@ export default function Home() {
                     minHeight: {
                       xs: "18vh",
                       md: "27vh",
-                      lg: "40vh"
-                    }
+                      lg: "40vh",
+                    },
                   }}
                   onClick={horses}
                 ></Button>
@@ -294,8 +293,8 @@ export default function Home() {
                     minHeight: {
                       xs: "18vh",
                       md: "27vh",
-                      lg: "40vh"
-                    }
+                      lg: "40vh",
+                    },
                   }}
                   onClick={forg}
                 ></Button>
@@ -308,5 +307,3 @@ export default function Home() {
     </React.Fragment>
   );
 }
-
-
