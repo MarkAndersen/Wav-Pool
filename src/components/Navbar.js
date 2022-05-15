@@ -1,6 +1,13 @@
 import React from "react";
-import { cyan, teal } from '@mui/material/colors';
-import { AppBar, Box, createTheme, ThemeProvider, Toolbar, Typography } from "@mui/material";
+import { cyan, teal } from "@mui/material/colors";
+import {
+  AppBar,
+  Box,
+  createTheme,
+  ThemeProvider,
+  Toolbar,
+  Typography,
+} from "@mui/material";
 
 const theme = createTheme({
   palette: {
@@ -14,25 +21,29 @@ const theme = createTheme({
 });
 
 theme.typography.h6 = {
-  fontSize: '2.0rem',
-  '@media (min-width: 600px)': {
-    fontSize: '2.5rem',
+  fontSize: "2.0rem",
+  "@media (min-width: 600px)": {
+    fontSize: "2.5rem",
   },
-  [theme.breakpoints.up('md')]: {
-    fontSize: '3.0rem',
+  [theme.breakpoints.up("md")]: {
+    fontSize: "3.0rem",
   },
-    fontFamily: 'Luckiest Guy',
-    color: '#b2dfdb',
- 
-}
-
+  fontFamily: "Luckiest Guy",
+  color: "#b2dfdb",
+};
 
 export default function Navbar() {
   return (
     <ThemeProvider theme={theme}>
-    <AppBar position="static">
+      <AppBar position="static">
         <Toolbar disableGutters>
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'flex' }, justifyContent: 'center' }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "flex", md: "flex" },
+              justifyContent: "center",
+            }}
+          >
             <Typography
               variant="h6"
               noWrap
@@ -43,7 +54,7 @@ export default function Navbar() {
             </Typography>
           </Box>
         </Toolbar>
-    </AppBar>
+      </AppBar>
     </ThemeProvider>
   );
 }
