@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/wav-pool/static/css/main.b7722b74.css",
+    "main.js": "/wav-pool/static/js/main.0b2304ba.js",
+    "static/js/845.3c9bd8c4.chunk.js": "/wav-pool/static/js/845.3c9bd8c4.chunk.js",
+    "static/media/seal.wav": "/wav-pool/static/media/seal.b87208dd229d1c84de41.wav",
+    "static/media/bjird.wav": "/wav-pool/static/media/bjird.4f8182afe31f54dac62b.wav",
+    "static/media/train.jpg": "/wav-pool/static/media/train.f7ae981a31d4ac9e12ec.jpg",
+    "static/media/clop.wav": "/wav-pool/static/media/clop.504c719e1036b6478b1b.wav",
+    "static/media/neigh.wav": "/wav-pool/static/media/neigh.01e8cdbd04eb3f522ee3.wav",
+    "static/media/train.wav": "/wav-pool/static/media/train.300f468316b175cb9d4e.wav",
+    "static/media/wav-pool-sm.jpg": "/wav-pool/static/media/wav-pool-sm.31cd571b364eaaca8368.jpg",
+    "static/media/bobbo1.wav": "/wav-pool/static/media/bobbo1.8636aebb653f9f260883.wav",
+    "static/media/brrtt.wav": "/wav-pool/static/media/brrtt.919ac4d2ad08c11a0d9d.wav",
+    "static/media/loontunes.wav": "/wav-pool/static/media/loontunes.2c708406c1ecad5e7350.wav",
+    "static/media/bob1.jpg": "/wav-pool/static/media/bob1.2a47cc266ac1ff8ecd00.jpg",
+    "static/media/bird.jpg": "/wav-pool/static/media/bird.09299edc5929df251b35.jpg",
+    "static/media/bob2.jpg": "/wav-pool/static/media/bob2.9068761c4a8a4dad83cf.jpg",
+    "static/media/bobbo3.wav": "/wav-pool/static/media/bobbo3.98eb6e31891a29eddb5b.wav",
+    "static/media/bob3.jpg": "/wav-pool/static/media/bob3.3fac3651f1e70d1e5717.jpg",
+    "static/media/bobbo2.wav": "/wav-pool/static/media/bobbo2.d91cc7b443d83022e235.wav",
+    "static/media/ribbit.wav": "/wav-pool/static/media/ribbit.0e3ae45166e38f5593ad.wav",
+    "static/media/looney.gif": "/wav-pool/static/media/looney.87dbdf6f08bf35c833cc.gif",
+    "static/media/horse1.jpg": "/wav-pool/static/media/horse1.7ff0d8c580bb379d705d.jpg",
+    "static/media/seal.jpg": "/wav-pool/static/media/seal.1f533f99a7c2765e437e.jpg",
+    "static/media/burp.wav": "/wav-pool/static/media/burp.b1336bd9968b9fe98a7d.wav",
+    "static/media/2horses.jpg": "/wav-pool/static/media/2horses.8539fd42ffb17da99a8e.jpg",
+    "static/media/burrp.png": "/wav-pool/static/media/burrp.fbf4f9cc40cc6bb24c03.png",
+    "static/media/luckiest-guy-all-400-normal.woff": "/wav-pool/static/media/luckiest-guy-all-400-normal.648f831e78f388ed9830.woff",
+    "static/media/luckiest-guy-latin-400-normal.woff2": "/wav-pool/static/media/luckiest-guy-latin-400-normal.863b32af5495122d229c.woff2",
+    "static/media/toot.jpg": "/wav-pool/static/media/toot.b18a1c65cbba15c09dac.jpg",
+    "index.html": "/wav-pool/index.html",
+    "main.b7722b74.css.map": "/wav-pool/static/css/main.b7722b74.css.map",
+    "main.0b2304ba.js.map": "/wav-pool/static/js/main.0b2304ba.js.map",
+    "845.3c9bd8c4.chunk.js.map": "/wav-pool/static/js/845.3c9bd8c4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b7722b74.css",
+    "static/js/main.0b2304ba.js"
+  ]
+}
